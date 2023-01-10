@@ -1,0 +1,18 @@
+import { useState } from 'react'
+import Prince from "./assets/Prince.png"
+import Stars from "./assets/Stars.png"
+import './App.css'
+
+
+function App() {
+  return (
+    <div className="App" style={{
+      backgroundImage: `url(${Stars})`,
+      backgroundsize: 'cover'
+  }}>
+      <img src= {Prince} className='Prince'/>
+    </div>
+  )
+}
+
+export default App

@@ -1,0 +1,36 @@
+html {
+  overflow: hidden;
+  background-color: #070602;
+  /*background-image: url("./src/assets/Stars.png");
+  background-size:cover;*/
+}
+body {
+  margin: 0px;
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+@keyframes Rotating {
+  0% {rotate: 0deg;}
+  50% {rotate: 180deg;}
+  100% {rotate: 360deg;}
+}
+
+.App{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.Prince {
+  max-width:100vw;
+  max-height: 100vh;
+  animation-name: Rotating;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  object-fit: contain;
+  z-index: 1;
+}
